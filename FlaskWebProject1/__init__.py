@@ -305,5 +305,6 @@ def _analyse():
 def index():        
     return render_template('index.html')
 
-app.secret_key = 'RAUNAK123'
-#app.run()
+if __name__ == '__main__':
+    app.secret_key = 'RAUNAK123'
+    app.run()
